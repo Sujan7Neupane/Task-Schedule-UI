@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- Left Panel - Task List -->
+        <div class="task-container">
+            <div class="header">
+                <h2>Monday</h2>
+                <h3>27 May</h3>
+                <div class="profile">
+                    <img src="./images/profile.webp" alt="">
+                </div>
+            </div>
+
+            <div class="calendar">
+                <div class="day active">Mon <span>27</span></div>
+                <div class="day">Tue <span>28</span></div>
+                <div class="day">Wed <span>29</span></div>
+                <div class="day">Thu <span>30</span></div>
+                <div class="day">Fri <span>31</span></div>
+                <div class="day">Sat <span>1</span></div>
+                <div class="day">Sun <span>2</span></div>
+            </div>
+
+            <div class="task-list">
+                <div class="task">
+                    <div class="icon"><i class="fas fa-stethoscope"></i></div>
+                    <div class="details">
+                        <h4>Doctor Appointment</h4>
+                        <p>8:30am to 9:00am</p>
+                    </div>
+                    <button class="delete"><i class="fas fa-trash"></i></button>
+                </div>
+
+                <div class="task">
+                    <div class="icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="details">
+                        <h4>Daily Stand-up</h4>
+                        <p>9:30am to 9:45am</p>
+                    </div>
+                    <button class="delete"><i class="fas fa-trash"></i></button>
+                </div>
+
+                <div class="task">
+                    <div class="icon"><i class="fas fa-dumbbell"></i></div>
+                    <div class="details">
+                        <h4>Gym</h4>
+                        <p>3:30pm to 5:15pm</p>
+                    </div>
+                    <button class="delete"><i class="fas fa-trash"></i></button>
+                </div>
+
+                <div class="task">
+                    <div class="icon"><i class="fas fa-utensils"></i></div>
+                    <div class="details">
+                        <h4>Dinner with Ann</h4>
+                        <p>7:00pm to 8:30pm</p>
+                    </div>
+                    <button class="delete"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+
+            <button class="new-task">+ New Task</button>
+        </div>
+
+        <!-- Right Panel - New Task Form -->
+        <div class="task-form">
+            <div class="header">
+                <i class="fas fa-arrow-left"></i>
+                <h3>New Task</h3>
+                <div class="profile">
+                    <img src="./images/profile.webp" alt="">
+                </div>
+            </div>
+
+            <label>Task Name</label>
+            <input type="text" placeholder="Enter name">
+
+            <div class="time-input">
+                <div>
+                    <label>Start Time</label>
+                    <input type="time" value="09:30">
+                </div>
+                <div>
+                    <label>End Time</label>
+                    <input type="time" value="10:30">
+                </div>
+            </div>
+
+            <label>Set Reminder</label>
+            <div class="reminder">
+                <button class="selected">5 min before</button>
+                <button>15 min before</button>
+                <button>30 min before</button>
+            </div>
+
+            <button class="create-task">Create Task</button>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/74dd9e8be8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

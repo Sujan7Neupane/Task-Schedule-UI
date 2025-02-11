@@ -1,0 +1,187 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6a5acd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Left Panel - Task List */
+.task-container {
+  width: 320px;
+  background-color: #121224;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header h2,
+.header h3 {
+  margin: 0;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.day {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.day span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.active {
+  background-color: #32cd32;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.task-list {
+  margin-bottom: 15px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  background-color: #23234a;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.details h4,
+.details p {
+  margin: 0;
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.new-task {
+  width: 100%;
+  padding: 10px;
+  background-color: #32cd32;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Right Panel - New Task Form */
+.task-form {
+  width: 320px;
+  background-color: #121224;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.task-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.task-form input {
+  width: 100%;
+  padding: 10px;
+  background: #23234a;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.time-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.time-input div {
+  width: 48%;
+}
+
+.reminder {
+  display: flex;
+  gap: 10px;
+}
+
+.reminder button {
+  background: #23234a;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.reminder .selected {
+  background: #32cd32;
+}
+
+.create-task {
+  width: 100%;
+  padding: 10px;
+  background-color: #32cd32;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
